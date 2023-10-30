@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-button {
+  color: #594545;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#profile-section {
+  color: #594545;
+}
+
+#skills-section h1, #projects-section h1 {
+  color: #594545;
+}
+
+#skills-section {
+  color: #fff8ea;
+}
+
+#navbar {
+  z-index: 100;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media (min-width: 0px) {
+  #profile-section {
+    padding-top: 30vw;
+    padding-bottom: 15vw;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 480px) {
+  p {
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  #profile-section {
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 30px;
   }
 }
